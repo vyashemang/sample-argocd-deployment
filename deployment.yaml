@@ -15,7 +15,7 @@ spec:
       spec:
         containers:
           - name: sample-argocd-api
-            image: vyashemang/sample-argocd-api:34
+            image: vyashemang/sample-argocd-api:38
             imagePullPolicy: Always
             ports:
               - containerPort: 8080
