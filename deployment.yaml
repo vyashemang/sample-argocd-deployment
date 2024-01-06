@@ -1,6 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  creationTimestamp: null
+  labels:
+    app: sample-argocd-api
   name: sample-argocd-api
   namespace: sample-argocd-app
 spec:
@@ -10,12 +13,10 @@ spec:
       app: sample-argocd-api
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: sample-argocd-api
-      spec:
-        containers:
-          - name: sample-argocd-api
-            image: vyashemang/sample-argocd-api:38
-            imagePullPolicy: Always
-            ports:
-              - containerPort: 8080
+    spec:
+      containers:
+      - image: vyashemang/sample-argocd-api:38
+        name: sample-argocd-api
