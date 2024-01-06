@@ -6,7 +6,7 @@ metadata:
     app: sample-argocd-api
   name: sample-argocd-api
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: sample-argocd-api
