@@ -5,7 +5,6 @@ metadata:
   labels:
     app: sample-argocd-api
   name: sample-argocd-api
-  namespace: sample-argocd-app
 spec:
   replicas: 2
   selector:
