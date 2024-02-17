@@ -17,5 +17,5 @@ spec:
         app: sample-argocd-api
     spec:
       containers:
-      - image: vyashemang/sample-argocd-api:45
+      - image: vyashemang/sample-argocd-api:47
         name: sample-argocd-api
